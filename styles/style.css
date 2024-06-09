@@ -20,7 +20,10 @@ html {
     opacity: 1;
 }
 
-.container-patient {
+.container-2 {
+    display:flex;
+}
+.container-2 .container-patient {
     margin-top: 25px;
     top: 122px;
     left: 18px;
@@ -32,10 +35,38 @@ html {
     opacity: 1;
     border-style: solid;
 }
-.container-patient .patients {
+container-2 .container-patient .patients {
     top: 142px;
     left: 38px;
     width: 100px;
+    height: 33px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal 800 24px/33px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+.container-2 .diagnosis {
+    margin-top: 25px;
+    top: 122px;
+    left: 417px;
+    width: 766px;
+    height: 673px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+    border-style: solid;
+
+}
+.container-2 .diagnosis .diagnosis-hist {
+    top: 142px;
+    left: 437px;
+    width: 207px;
     height: 33px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
     letter-spacing: var(--unnamed-character-spacing-0);
