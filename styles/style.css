@@ -1,4 +1,4 @@
-html {
+body {
     border-style: dashed;
     top: 0px;
     left: 0px;
@@ -22,7 +22,7 @@ html {
 }
 
 .container-2 {
-    display:flex;
+    display: flex;
 }
 .container-2 .container-patient {
     margin-top: 25px;
@@ -79,7 +79,9 @@ html {
     color: #072635;
     opacity: 1;
 }
-.container-2 .diagnostic-list {
+.diagnostic-list {
+    margin-top: 25px;
+    margin-left: 25px;
     top: 827px;
     left: 417px;
     width: 766px;
@@ -88,7 +90,7 @@ html {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
-    border-style: solid;
+    border-style: dashed;
 }
 .diagnostic-list .diagnostic-title {
     top: 847px;
@@ -111,6 +113,21 @@ html {
     left: 1216px;
     width: 367px;
     height: 740px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+    border-style: solid;
+}
+
+.lab-results {
+    margin-top: 25px;
+    margin-left: 25px;
+    top: 880px;
+    left: 1215px;
+    width: 367px;
+    height: 296px;
+    /*UI Properties*/
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
