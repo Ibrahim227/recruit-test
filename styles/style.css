@@ -9,7 +9,7 @@ html {
     opacity: 1;
 }
 
-.container {
+header {
     top: 18px;
     left: 18px;
     width: 1564px;
@@ -20,15 +20,60 @@ html {
     border-radius: 70px;
     opacity: 1;
 }
-.container .logo {
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+header nav ul .overview {
+    top: 45px;
+    left: 473px;
+    width: 88px;
+    height: 19px;
+    opacity: 1;
+}
+header nav ul .patient {
+    top: 34px;
+    left: 601px;
+    width: 122px;
+    height: 41px;
+    background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    opacity: 1;
+}
+header nav ul .schedule {
+    top: 45px;
+    left: 762px;
+    width: 87px;
+    height: 19px;
+    opacity: 1;
+}
+
+header .logo {
+    margin-top: 12px;
+    margin-left: 32px;
     top: 30px;
     left: 50px;
     width: 211px;
     height: 48px;
-    background: transparent url('img/TestLogo.png') 0% 0% no-repeat padding-box;
+    background: transparent url('../images/TestLogo.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-
+header .middle-content {
+    list-style-type: none;
+    margin-top: -55px;
+    margin-left: 455px;
+    top: 23px;
+    left: 473px;
+    width: 663px;
+    height: 63px;
+    opacity: 1;
+    border-style: dashed;
+}
 .container-2 {
     display: flex;
 }
