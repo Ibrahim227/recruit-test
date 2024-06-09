@@ -1,4 +1,4 @@
-body {
+html {
     border-style: dashed;
     top: 0px;
     left: 0px;
@@ -20,12 +20,20 @@ body {
     border-radius: 70px;
     opacity: 1;
 }
+.container .logo {
+    top: 30px;
+    left: 50px;
+    width: 211px;
+    height: 48px;
+    background: transparent url('img/TestLogo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
 
 .container-2 {
     display: flex;
 }
 .container-2 .container-patient {
-    margin-top: 25px;
+    margin-top: 20px;
     top: 122px;
     left: 18px;
     width: 367px;
@@ -52,7 +60,7 @@ body {
 }
 
 .container-2 .diagnosis {
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 25px;
     top: 122px;
     left: 417px;
@@ -80,7 +88,7 @@ body {
     opacity: 1;
 }
 .diagnostic-list {
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 25px;
     top: 827px;
     left: 417px;
@@ -107,7 +115,7 @@ body {
     opacity: 1;
 }
 .container-2 .profile {
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 25px;
     top: 108px;
     left: 1216px;
@@ -121,7 +129,7 @@ body {
 }
 
 .lab-results {
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 25px;
     top: 880px;
     left: 1215px;
@@ -133,4 +141,18 @@ body {
     border-radius: 16px;
     opacity: 1;
     border-style: solid;
+}
+.lab-results .lab {
+    top: 990px;
+    left: 1235px;
+    width: 137px;
+    height: 33px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal 800 24px/33px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
 }
