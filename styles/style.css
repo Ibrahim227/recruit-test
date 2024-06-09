@@ -1,11 +1,21 @@
-.section {
+html {
     border-style: dashed;
+    top: 0px;
+    left: 0px;
+    width: 1600px;
+    height: 1195px;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
-.section .container {
+.container {
     top: 18px;
     left: 18px;
     width: 1564px;
     height: 72px;
-    border-style: dashed;
+    border-style: solid;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    opacity: 1;
 }
