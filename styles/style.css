@@ -30,7 +30,7 @@ header ul.inline-block-container {
 header ul.inline-block-container li.inline-block-item {
     display: inline-block;
     margin: 15px 10px;
-    border-style: solid;
+    border-style: none;
 
 }
 header .inline-block-container .inline-block-item .overview {
@@ -50,12 +50,12 @@ header .inline-block-container .inline-block-item .patient {
     border-radius: 41px;
     opacity: 1;
 }
-header .inline-block-container .inline-block-item .image-patient {
+header .inline-block-container .inline-block-item .img-patient {
     top: 46px;
     left: 617px;
     width: 24px;
     height: 17px;
-    background: transparent url('images/group_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    margin-top: 10px;
     opacity: 1;
 }
 header ul .schedule {
