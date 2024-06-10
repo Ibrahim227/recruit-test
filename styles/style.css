@@ -137,6 +137,14 @@ header .container .right-content .text-content span {
     opacity: 1;
     border-style: solid;
 }
+.container-2 .container-patient img {
+    width: 18px;
+    height: 18px;
+    background: transparent url('img/search_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 20px;
+    margin-left: 230px;
+}
 .container-2 .container-patient .patients {
     width: 100px;
     height: 33px;
@@ -163,6 +171,41 @@ header .container .right-content .text-content span {
     opacity: 1;
     border-style: solid;
 
+}
+.container-2 .diagnosis .blood-pressure {
+    top: 215px;
+    left: 437px;
+    border-style: dashed;
+    width: 726px;
+    height: 298px;
+    background: #F4F0FE 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.container-2 .diagnosis .blood-pressure .p1 {
+    width: 131px;
+    height: 24px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal bold 18px/24px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.container-2 .diagnosis .resp-rate {
+    border-style: dashed;
+    width: 228px;
+    height: 242px;
+    background: #E0F3FA 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .container-2 .diagnosis .diagnosis-hist {
     width: 207px;
@@ -249,15 +292,20 @@ header .container .right-content .text-content span {
     opacity: 1;
     border-style: solid;
 }
-.container-2 .profile .show-infos {
-    border-style: solid;
+
+/*container-2 .profile .show-infos {
+    border-style: dashed;
+    margin-top: 100px;
     top: 764px;
     left: 1249px;
     width: 300px;
     height: 63px;
     opacity: 1;
-}
-.container-2 .profile .show-infos div {
+}*/
+.container-2 .profile .show-infos {
+    top: 774px;
+    left: 1289px;
+    border-style: dashed;
     width: 220px;
     height: 41px;
     margin-top: 15px;
@@ -267,9 +315,8 @@ header .container .right-content .text-content span {
     border-radius: 41px;
     opacity: 1;
 }
-.container-2 .profile .show-infos div span {
+.container-2 .profile .show-infos span.p1 {
     margin-left: 40px;
-    margin-top: 40px;
     width: 140px;
     height: 19px;
     text-align: center;
