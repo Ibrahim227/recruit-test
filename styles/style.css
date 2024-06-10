@@ -228,7 +228,7 @@ header .container .right-content .text-content span {
     border-radius: 12px;
     opacity: 1;
     margin-left: 265px;
-    margin-top: -245px;
+    margin-top: -247px;
 }
 .container-3 .diagnosis .temp img {
     width: 96px;
@@ -269,8 +269,8 @@ header .container .right-content .text-content span {
     color: #072635;
     text-transform: capitalize;
     opacity: 1;
-    margin-bottom: 400px;
-    margin-left: -100px;
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .container-3 .diagnosis .diagnosis-hist {
