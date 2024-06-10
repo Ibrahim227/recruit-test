@@ -213,6 +213,13 @@ header .container .right-content .text-content span {
     margin-left: 15px;
     margin-top: 20px;
 }
+.container-3 .diagnosis .resp-rate img{
+    width: 96px;
+    height: 96px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-top: 10px;
+}
 .container-3 .diagnosis .temp {
     border-style: dashed;
     width: 228px;
@@ -222,6 +229,13 @@ header .container .right-content .text-content span {
     opacity: 1;
     margin-left: 265px;
     margin-top: -245px;
+}
+.container-3 .diagnosis .temp img {
+    width: 96px;
+    height: 96px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 .container-3 .diagnosis .heart-rate {
     border-style: dashed;
@@ -235,6 +249,31 @@ header .container .right-content .text-content span {
     margin-left: 515px;
     margin-top: -246px;
 }
+.container-3 .diagnosis .heart-rate img {
+    width: 96px;
+    height: 96px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.container-3 .diagnosis .heart-rate label,
+.container-3 .diagnosis .temp label,
+.container-3 .diagnosis .resp-rate label {
+    width: 125px;
+    height: 22px;
+    font: var(--unnamed-font-style-normal) normal medium 16px/22px var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal medium 16px/22px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-top: 200px;
+    margin-right: 10px;
+}
+
 .container-3 .diagnosis .diagnosis-hist {
     width: 207px;
     height: 33px;
@@ -335,7 +374,7 @@ header .container .right-content .text-content span {
     border-radius: 41px;
     opacity: 1;
 }
-.container-2 .profile .show-infos span.p1 {
+.container-2 .profile .show-infos label.p1 {
     margin-left: 40px;
     width: 140px;
     height: 19px;
