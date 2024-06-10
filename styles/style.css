@@ -140,12 +140,12 @@ header .container .right-content .text-content span {
 .container-2 .container-patient img {
     width: 18px;
     height: 18px;
-    background: transparent url('img/search_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/search_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-top: 20px;
     margin-left: 230px;
 }
-.container-2 .container-patient .patients {
+.container-2 .container-patient span.patients {
     width: 100px;
     height: 33px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
@@ -158,7 +158,14 @@ header .container .right-content .text-content span {
     opacity: 1;
 }
 
-.container-2 .diagnosis {
+/* Container-3 UI Properties
+    container-3 diagnosis
+    container-3 diagnostics
+
+
+*/
+
+.container-3 .diagnosis {
     margin-top: 35px;
     margin-left: 25px;
     top: 122px;
@@ -172,9 +179,7 @@ header .container .right-content .text-content span {
     border-style: solid;
 
 }
-.container-2 .diagnosis .blood-pressure {
-    top: 215px;
-    left: 437px;
+.container-3 .diagnosis .blood-pressure {
     border-style: dashed;
     width: 726px;
     height: 298px;
@@ -184,7 +189,7 @@ header .container .right-content .text-content span {
     margin-top: 40px;
     margin-left: 15px;
 }
-.container-2 .diagnosis .blood-pressure .p1 {
+.container-3 .diagnosis .blood-pressure .p1 {
     width: 131px;
     height: 24px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-manrope);
@@ -197,17 +202,40 @@ header .container .right-content .text-content span {
     text-transform: capitalize;
     opacity: 1;
 }
-.container-2 .diagnosis .resp-rate {
+
+.container-3 .diagnosis .resp-rate {
     border-style: dashed;
     width: 228px;
     height: 242px;
     background: #E0F3FA 0% 0% no-repeat padding-box;
     border-radius: 12px;
     opacity: 1;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 20px;
 }
-.container-2 .diagnosis .diagnosis-hist {
+.container-3 .diagnosis .temp {
+    border-style: dashed;
+    width: 228px;
+    height: 242px;
+    background: #FFE6E9 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    margin-left: 265px;
+    margin-top: -245px;
+}
+.container-3 .diagnosis .heart-rate {
+    border-style: dashed;
+    top: 533px;
+    left: 935;
+    width: 228px;
+    height: 242px;
+    border-radius: 12px;
+    background: #FFE6F1 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 515px;
+    margin-top: -246px;
+}
+.container-3 .diagnosis .diagnosis-hist {
     width: 207px;
     height: 33px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
@@ -218,8 +246,9 @@ header .container .right-content .text-content span {
     letter-spacing: 0px;
     color: #072635;
     opacity: 1;
+    margin-bottom: 20px;
 }
-.diagnostic-list {
+.container-3 .diagnostic-list {
     margin-top: 30px;
     margin-left: 25px;
     top: 827px;
@@ -293,15 +322,6 @@ header .container .right-content .text-content span {
     border-style: solid;
 }
 
-/*container-2 .profile .show-infos {
-    border-style: dashed;
-    margin-top: 100px;
-    top: 764px;
-    left: 1249px;
-    width: 300px;
-    height: 63px;
-    opacity: 1;
-}*/
 .container-2 .profile .show-infos {
     top: 774px;
     left: 1289px;
