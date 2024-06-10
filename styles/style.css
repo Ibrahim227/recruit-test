@@ -22,10 +22,11 @@ header {
 }
 
 header nav ul {
+    display: inline;
     list-style-type: none;
     padding: 0;
 }
-header nav ul li {
+header nav ul li div {
     display: inline;
     margin: 0 10px;
 }
