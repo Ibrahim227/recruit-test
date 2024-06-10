@@ -29,17 +29,18 @@ header ul.inline-block-container {
 }
 header ul.inline-block-container li.inline-block-item {
     display: inline-block;
-    margin: 0 10px;
+    margin: 15px 10px;
     border-style: solid;
+
 }
-header nav ul .overview {
+header .inline-block-container .inline-block-item .overview {
     top: 45px;
     left: 473px;
     width: 88px;
     height: 19px;
     opacity: 1;
 }
-header nav ul .patient {
+header .inline-block-container .inline-block-item .patient {
     top: 34px;
     left: 601px;
     width: 122px;
@@ -49,21 +50,29 @@ header nav ul .patient {
     border-radius: 41px;
     opacity: 1;
 }
-header nav ul .schedule {
+header .inline-block-container .inline-block-item .patient {
+    top: 46px;
+    left: 617px;
+    width: 24px;
+    height: 17px;
+    background: transparent url('images/group_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+header ul .schedule {
     top: 45px;
     left: 762px;
     width: 87px;
     height: 19px;
     opacity: 1;
 }
-header nav ul .message {
+header ul .message {
     top: 45px;
     left: 889px;
     width: 89px;
     height: 19px;
     opacity: 1;
 }
-header nav ul .transactions {
+header ul .transactions {
     top: 45px;
     left: 1017px;
     width: 119px;
