@@ -138,8 +138,6 @@ header .container .right-content .text-content span {
     border-style: solid;
 }
 .container-2 .container-patient .patients {
-    top: 142px;
-    left: 38px;
     width: 100px;
     height: 33px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
@@ -167,8 +165,6 @@ header .container .right-content .text-content span {
 
 }
 .container-2 .diagnosis .diagnosis-hist {
-    top: 142px;
-    left: 437px;
     width: 207px;
     height: 33px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
@@ -193,9 +189,26 @@ header .container .right-content .text-content span {
     opacity: 1;
     border-style: dashed;
 }
+
+.container-3 .diagnostic-list .text-content {
+    display: ;
+    border-style: solid;
+    width: 726px;
+    height: 48px;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+}
+.diagnostic-list .text-content ul.inline-block-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.diagnostic-list .text-content ul.inline-block-container li.inline-block-item {
+    display: inline-block;
+    margin: 15px 10px;
+}
 .diagnostic-list .diagnostic-title {
-    top: 847px;
-    left: 437px;
     width: 176px;
     height: 33px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
@@ -220,7 +233,38 @@ header .container .right-content .text-content span {
     opacity: 1;
     border-style: solid;
 }
-
+.container-2 .profile .show-infos {
+    border-style: solid;
+    top: 764px;
+    left: 1249px;
+    width: 300px;
+    height: 63px;
+    opacity: 1;
+}
+.container-2 .profile .show-infos div {
+    width: 220px;
+    height: 41px;
+    margin-top: 15px;
+    margin-left: 40px;
+    background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    opacity: 1;
+}
+.container-2 .profile .show-infos div span {
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 140px;
+    height: 19px;
+    text-align: center;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
 .lab-results {
     margin-top: 20px;
     margin-left: 25px;
@@ -236,8 +280,6 @@ header .container .right-content .text-content span {
     border-style: solid;
 }
 .lab-results .lab {
-    top: 990px;
-    left: 1235px;
     width: 137px;
     height: 33px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
