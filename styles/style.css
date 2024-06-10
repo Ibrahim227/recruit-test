@@ -79,6 +79,9 @@ header ul .transactions {
     height: 19px;
     opacity: 1;
 }
+header .inline-block-container .inline-block-item .right-panel {
+    border-style: solid;
+}
 header .logo {
     margin-top: 12px;
     margin-left: 32px;
