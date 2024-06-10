@@ -24,12 +24,17 @@ header {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 70px;
     opacity: 1;
+    position: relative;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
 }
 header .logo {
-    margin-top: 12px;
     margin-left: 32px;
-    top: 30px;
-    left: 50px;
     width: 211px;
     height: 48px;
     background: transparent url('../images/TestLogo.png') 0% 0% no-repeat padding-box;
@@ -37,14 +42,13 @@ header .logo {
 }
 header .middle-content {
     list-style-type: none;
-    margin-top: -55px;
-    margin-left: 455px;
-    top: 23px;
-    left: 473px;
+    margin-top: 5px;
+    margin-left: 45px;
     width: 663px;
     height: 63px;
     opacity: 1;
     border-style: dashed;
+
 }
 
 header ul.inline-block-container {
@@ -56,19 +60,13 @@ header ul.inline-block-container {
 header ul.inline-block-container li.inline-block-item {
     display: inline-block;
     margin: 15px 10px;
-    border-style: none;
-
 }
 header .inline-block-container .inline-block-item .overview {
-    top: 45px;
-    left: 473px;
     width: 88px;
     height: 19px;
     opacity: 1;
 }
 header .inline-block-container .inline-block-item .patient {
-    top: 34px;
-    left: 601px;
     width: 122px;
     height: 41px;
     background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
@@ -77,44 +75,57 @@ header .inline-block-container .inline-block-item .patient {
     opacity: 1;
 }
 header .inline-block-container .inline-block-item .img-patient {
-    top: 46px;
-    left: 617px;
     width: 24px;
     height: 17px;
     margin-top: 10px;
     opacity: 1;
 }
 header ul .schedule {
-    top: 45px;
-    left: 762px;
     width: 87px;
     height: 19px;
     opacity: 1;
 }
 header ul .message {
-    top: 45px;
-    left: 889px;
     width: 89px;
     height: 19px;
     opacity: 1;
 }
 header ul .transactions {
-    top: 45px;
-    left: 1017px;
     width: 119px;
     height: 19px;
     opacity: 1;
 }
-header .inline-block-container .inline-block-item .right-content {
+header .container .right-content {
+    display: flex;
+    align-items: center;
     border-style: solid;
-    top: 32px;
-    left: 1309px;
     width: 241px;
     height: 44px;
     opacity: 1;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+header .container .right-content img {
+    font-size: 24px;
+}
+header .container .right-content .text-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 16px;
+}
+header .container .right-content .text-content span {
+    text-align: left;
 }
 
-/* Container-2 UI Properties */
+
+/* Container-2 UI Properties
+    patients container properties
+    diagnostics list container properties
+    diagnosis history container properties
+    lab results container properties
+    profiles container properties
+*/
 .container-2 {
     display: flex;
 }
