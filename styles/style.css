@@ -20,6 +20,7 @@ header {
     border-radius: 70px;
     opacity: 1;
 }
+
 header nav ul {
     list-style-type: none;
     padding: 0;
@@ -52,7 +53,20 @@ header nav ul .schedule {
     height: 19px;
     opacity: 1;
 }
-
+header nav ul .message {
+    top: 45px;
+    left: 889px;
+    width: 89px;
+    height: 19px;
+    opacity: 1;
+}
+header nav ul .transactions {
+    top: 45px;
+    left: 1017px;
+    width: 119px;
+    height: 19px;
+    opacity: 1;
+}
 header .logo {
     margin-top: 12px;
     margin-left: 32px;
