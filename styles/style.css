@@ -440,6 +440,8 @@ header .container .right-content p {
     opacity: 1;
 }
 .container-3 .diagnostic-list .text-content .first-line {
+    display: flex;
+    justify-content: space-between;
     border-style: dashed;
     width: 723px;
     height: 59px;
@@ -448,6 +450,18 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 10px;
 }
+.container-3 .diagnostic-list .text-content .second-line, .third-line {
+    display: flex;
+    justify-content: space-between;
+    border-style: dashed;
+    width: 726px;
+    height: 40px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 10px;
+}
+
 
 .container-2 .profile {
     margin-top: 35px;
