@@ -450,7 +450,7 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 12px;
 }
-.container-3 .diagnostic-list .text-content .second-line, .third-line, .fifth-line {
+.container-3 .diagnostic-list .text-content .second-line, .third-line, .fourth-line {
     display: flex;
     justify-content: space-between;
     border-style: dashed;
@@ -528,4 +528,21 @@ header .container .right-content p {
     letter-spacing: 0px;
     color: #072635;
     opacity: 1;
+}
+.lab-results .first-results, .third-results, .fourth-results, .fifth-results {
+    border-style: solid;
+    width: 315px;
+    height: 40px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 10px;
+}
+.lab-results .second-results {
+    border-style: dashed;
+    width: 315px;
+    height: 40px;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 10px;
 }
