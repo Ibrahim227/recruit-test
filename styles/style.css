@@ -153,7 +153,7 @@ header .container .right-content p {
     opacity: 1;
     border-style: solid;
 }
-.container-2 .container-patient img {
+.container-2 .container-patient .search-icon {
     width: 18px;
     height: 18px;
     opacity: 1;
@@ -172,7 +172,35 @@ header .container .right-content p {
     color: #072635;
     opacity: 1;
 }
+.container-2 .container-patient .patient-name {
+    display: flex;
+    border-style: dashed;
+    width: 317px;
+    height: 48px;
+    opacity: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 20px;
+}
 
+.container-2 .container-patient .patient-name .more-horiz{
+    width 18px;
+    height: 4px;
+    background: transparent url('images/more_horiz_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-right: 15px;
+}
+.container-2 .container-patient .patient-name .patient-infos {
+    display: relative;
+    width: 97px;
+    height: 42px;
+    opacity: 1;
+    margin-left: -130px;
+}
+.container-2 .container-patient .patient-name .patient-infos .p1{
+    margin-top: -5px;
+}
 /* Container-3 UI Properties
     container-3 diagnosis
     container-3 diagnostics
