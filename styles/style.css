@@ -180,16 +180,17 @@ header .container .right-content p {
     opacity: 1;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 20px;
 }
 
-.container-2 .container-patient .patient-name .more-horiz{
+.container-2 .container-patient .patient-name .right-more-icon{
     width 18px;
     height: 4px;
     background: transparent url('images/more_horiz_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-right: 15px;
+    margin-top: -15px;
 }
 .container-2 .container-patient .patient-name .patient-infos {
     display: relative;
