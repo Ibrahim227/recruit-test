@@ -156,7 +156,6 @@ header .container .right-content p {
 .container-2 .container-patient img {
     width: 18px;
     height: 18px;
-    background: transparent url('images/search_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-top: 20px;
     margin-left: 230px;
@@ -304,7 +303,7 @@ header .container .right-content p {
     margin-left: 15px;
     margin-top: 20px;
 }
-.container-3 .diagnosis .resp-rate img{
+.container-3 .diagnosis .resp-rate img {
     width: 96px;
     height: 96px;
     opacity: 1;
