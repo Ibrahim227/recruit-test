@@ -277,6 +277,22 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 2px;
 }
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic p i {
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--unnamed-color-ffffff);
+    background: #E66FD2 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic p i {
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--unnamed-color-ffffff);
+    background: #8C6FE6  0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+}
 
 .container-3 .diagnosis .resp-rate {
     border-style: dashed;
