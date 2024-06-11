@@ -184,13 +184,14 @@ header .container .right-content p {
     margin-left: 20px;
 }
 .container-2 .container-patient .active-background {
+    display: flex;
     width: 353px;
     height: 80px;
     background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
     background: #D8FCF7 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-top: 10px;
-    margin-bottom: -25px;
+    margin-bottom: -12px;
 }
 .container-2 .container-patient .active-background .patient-name-active {
     display: flex;
@@ -221,6 +222,24 @@ header .container .right-content p {
 }
 .container-2 .container-patient .patient-name .patient-infos .p1{
     margin-top: -5px;
+}
+.container-2 .container-patient .active-background .patient-name-active .patient-infos .p1 {
+    margin-top: -5px;
+}
+.container-2 .container-patient .active-background .patient-name-active .patient-infos {
+    display: relative;
+    width: 97px;
+    height: 42px;
+    opacity: 1;
+    margin-left: -140px;
+}
+.container-2 .container-patient .active-background .patient-name-active .right-more-icon {
+    width 18px;
+    height: 4px;
+    background: transparent url('images/more_horiz_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-right: 15px;
+    margin-top: -15px;
 }
 /* Container-3 UI Properties
     container-3 diagnosis
