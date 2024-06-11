@@ -147,11 +147,16 @@ header .container .right-content p {
     margin-left: 18px;
     width: 367px;
     height: 1054px;
+    max-height: 1054px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
     border-style: solid;
+    border: 1px solid black;
 }
 .container-2 .container-patient .search-icon {
     width: 18px;
@@ -241,11 +246,10 @@ header .container .right-content p {
     margin-right: 15px;
     margin-top: -15px;
 }
+
 /* Container-3 UI Properties
     container-3 diagnosis
     container-3 diagnostics
-
-
 */
 
 .container-3 .diagnosis {
