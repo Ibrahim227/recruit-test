@@ -618,7 +618,44 @@ header .container .right-content p {
     border-style: dashed;
     width: 166px;
     height: 42px;
-    display: relative;
+}
+.container-2 .profile .text-content .gender {
+    width: 106px;
+    height: 42px;
+    opacity: 1;
+    border-style: dashed;
+}
+.container-2 .profile .text-content .phone {
+    width: 130px;
+    height: 42px;
+    opacity: 1;
+    border-style: dashed;
+}
+.container-2 .profile .text-content .emergency {
+    width: 180px;
+    height: 42px;
+    opacity: 1;
+    border-style: dashed;
+}
+.container-2 .profile .text-content .insurance {
+    width: 180px;
+    height: 42px;
+    opacity: 1;
+    border-style: dashed;
+}
+
+.container-2 .profile .text-content .p1 {
+    width: auto;
+    height: auto;
+    font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal medium 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
 }
 .container-2 .profile .show-infos {
     top: 774px;
