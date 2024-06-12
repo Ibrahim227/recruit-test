@@ -147,7 +147,7 @@ header .container .right-content p {
     margin-left: 18px;
     width: 367px;
     height: 1054px;
-    max-height: 1054px;
+    max-height: 941px;
     overflow-y: scroll;
     overflow-x: hidden;
     border: 1px solid #ddd;
@@ -157,6 +157,19 @@ header .container .right-content p {
     opacity: 1;
     border-style: solid;
     border: 1px solid black;
+}
+.container-2 .container-patient::-webkit-scrollbar {
+    width: 6px;
+}
+.container-2 .container-patient::-webkit-scrollbar-track {
+    background: #E3E4E6 0% 0% no-repeat padding-box;
+}
+.container-2 .container-patient::-webkit-scrollbar-thumb {
+    background: #E3E4E6 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+}
+.container-2 .container-patient::-webkit-scrollbar-thumb {
+    background: darken(var(--scrollbar-color), 10%);
 }
 .container-2 .container-patient .search-icon {
     width: 18px;
