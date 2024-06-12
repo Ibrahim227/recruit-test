@@ -616,30 +616,30 @@ header .container .right-content p {
 }
 .container-2 .profile .text-content .birth-date {
     border-style: dashed;
-    width: 166px;
-    height: 42px;
+    width: auto;
+    height: auto;
 }
 .container-2 .profile .text-content .gender {
-    width: 106px;
-    height: 42px;
+    width: auto;
+    height: auto;
     opacity: 1;
     border-style: dashed;
 }
 .container-2 .profile .text-content .phone {
-    width: 130px;
-    height: 42px;
+    width: auto;
+    height: auto;
     opacity: 1;
     border-style: dashed;
 }
 .container-2 .profile .text-content .emergency {
-    width: 180px;
-    height: 42px;
+    width: auto;
+    height: auto;
     opacity: 1;
     border-style: dashed;
 }
 .container-2 .profile .text-content .insurance {
-    width: 180px;
-    height: 42px;
+    width: auto;
+    height: auto;
     opacity: 1;
     border-style: dashed;
 }
