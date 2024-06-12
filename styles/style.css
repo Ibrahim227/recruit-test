@@ -545,6 +545,7 @@ header .container .right-content p {
     color: #072635;
     opacity: 1;
 }
+
 .container-3 .diagnostic-list .text-content .first-line {
     display: flex;
     justify-content: space-between;
@@ -556,7 +557,9 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 12px;
 }
-.container-3 .diagnostic-list .text-content .second-line, .third-line, .fourth-line {
+.container-3 .diagnostic-list .text-content .second-line,
+.container-3 .diagnostic-list .text-content .third-line,
+.container-3 .diagnostic-list .text-content .fourth-line {
     display: flex;
     justify-content: space-between;
     border-style: dashed;
@@ -571,7 +574,14 @@ header .container .right-content p {
 .container-3 .diagnostic-list .text-content .third-line,
 .container-3 .diagnostic-list .text-content .fourth-line,
 .container-3 .diagnostic-list .text-content .first-line div p {
-    color: red;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
 }
 
 /* Container Profile and Lab Results UI properties */
@@ -729,7 +739,7 @@ header .container .right-content p {
     opacity: 1;
     margin-bottom: 14px;
 }
-.lab-results .first-results, .third-results, .fourth-results, .fifth-results {
+.lab-results .third-results, .fourth-results, .fifth-results {
     border-style: solid;
     width: 315px;
     height: 40px;
@@ -737,6 +747,17 @@ header .container .right-content p {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-left: 20px;
+    margin-top: 3px;
+}
+.lab-results .first-results {
+    border-style: solid;
+    width: 315px;
+    height: 40px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 .lab-results .second-results {
     border-style: dashed;
@@ -745,6 +766,7 @@ header .container .right-content p {
     background: #F6F7F8 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-left: 20px;
+    margin-top: 2px;
 }
 .container-2 .lab-results .img-1 {
     width: 20px;
