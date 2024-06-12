@@ -583,10 +583,12 @@ header .container .right-content p {
     border-style: solid;
 }
 .container-2 .profile .profile-img {
+    margin-top: 32px;
+    margin-left: 80px;
     width: 200px;
     height: 200px;
     opacity: 1;
-    border-style: solid;
+    border-style: dashed;
 }
 
 .container-2 .profile .show-infos {
