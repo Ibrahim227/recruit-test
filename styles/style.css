@@ -488,8 +488,6 @@ header .container .right-content p {
 .container-3 .diagnostic-list {
     margin-top: 30px;
     margin-left: 25px;
-    top: 827px;
-    left: 417px;
     width: 766px;
     height: 349px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -567,7 +565,13 @@ header .container .right-content p {
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: 5px;
+    margin-top: 7px;
+}
+.container-3 .diagnostic-list .text-content .second-line,
+.container-3 .diagnostic-list .text-content .third-line,
+.container-3 .diagnostic-list .text-content .fourth-line,
+.container-3 .diagnostic-list .text-content .first-line div p {
+    color: red;
 }
 
 /* Container Profile and Lab Results UI properties */
