@@ -574,13 +574,17 @@ header .container .right-content p {
 .container-2 .profile {
     margin-top: 35px;
     margin-left: 20px;
-    top: 108px;
-    left: 1216px;
     width: 367px;
     height: 740px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
+    opacity: 1;
+    border-style: solid;
+}
+.container-2 .profile .profile-img {
+    width: 200px;
+    height: 200px;
     opacity: 1;
     border-style: solid;
 }
