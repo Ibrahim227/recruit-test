@@ -591,13 +591,13 @@ header .container .right-content p {
     width: auto;
     height: 19px;
 }
-.container-3 .diagnostic-list .text-content::-webkit-scrollbar {
+.container-3 .diagnostic-list::-webkit-scrollbar {
     width: 6px;
 }
-.container-3 .diagnostic-list .text-content::-webkit-scrollbar-track {
+.container-3 .diagnostic-list::-webkit-scrollbar-track {
     background: #E3E4E6 0% 0% no-repeat padding-box;
 }
-.container-3 .diagnostic-list .text-content::-webkit-scrollbar-thumb {
+.container-3 .diagnostic-list::-webkit-scrollbar-thumb {
     background: darken(var(--scrollbar-color), 10%);
 }
 /* Container Profile and Lab Results UI properties */
@@ -738,6 +738,8 @@ header .container .right-content p {
     margin-left: 20px;
     width: 367px;
     height: 296px;
+    overflow-y: auto;
+    overflow-x: hidden;
     /*UI Properties*/
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -797,4 +799,15 @@ header .container .right-content p {
     align-items: right;
     margin-left: 260px;
     margin-top: 10px;
-}.
+}
+
+.container-2 .lab-results::-webkit-scrollbar {
+    width: 6px;
+}
+.container-2 .lab-results::-webkit-scrollbar-track {
+    background: #E3E4E6 0% 0% no-repeat padding-box;
+    width: 100px;
+}
+.container-2 .lab-results::-webkit-scrollbar-thumb {
+    background: darken(var(--scrollbar-color), 10%);
+}
