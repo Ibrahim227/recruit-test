@@ -261,6 +261,7 @@ header .container .right-content p {
     height: 42px;
     opacity: 1;
     margin-left: -130px;
+    border-style: solid;
 }
 .container-2 .container-patient .patient-name .patient-infos .p1{
     margin-top: -5px;
@@ -557,6 +558,10 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 12px;
 }
+.container-3 .diagnostic-list .text-content .first-line div.t3{
+    width: 79px;
+    height: 38px;
+}
 .container-3 .diagnostic-list .text-content .second-line,
 .container-3 .diagnostic-list .text-content .third-line,
 .container-3 .diagnostic-list .text-content .fourth-line {
@@ -570,10 +575,10 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 7px;
 }
-.container-3 .diagnostic-list .text-content .second-line,
-.container-3 .diagnostic-list .text-content .third-line,
-.container-3 .diagnostic-list .text-content .fourth-line,
-.container-3 .diagnostic-list .text-content .first-line div p {
+.container-3 .diagnostic-list .text-content .second-line div,
+.container-3 .diagnostic-list .text-content .third-line div,
+.container-3 .diagnostic-list .text-content .fourth-line div,
+.container-3 .diagnostic-list .text-content .first-line div {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-072635);
@@ -582,6 +587,9 @@ header .container .right-content p {
     letter-spacing: 0px;
     color: #072635;
     opacity: 1;
+    border-style: solid;
+    width: auto;
+    height: 19px;
 }
 
 /* Container Profile and Lab Results UI properties */
@@ -714,6 +722,9 @@ header .container .right-content p {
     opacity: 1;
     justify-content: space-between;
 }
+
+/* Lab Results UI Properties*/
+
 .container-2 .lab-results {
     margin-top: 20px;
     margin-left: 20px;
@@ -739,17 +750,9 @@ header .container .right-content p {
     opacity: 1;
     margin-bottom: 14px;
 }
-.lab-results .third-results, .fourth-results, .fifth-results {
-    border-style: solid;
-    width: 315px;
-    height: 40px;
-    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-    margin-left: 20px;
-    margin-top: 3px;
-}
-.lab-results .first-results {
+.lab-results .third-results,
+.lab-results .fourth-results,
+.lab-results  .fifth-results {
     border-style: solid;
     width: 315px;
     height: 40px;
@@ -759,6 +762,16 @@ header .container .right-content p {
     margin-left: 20px;
     margin-top: 5px;
 }
+.lab-results .first-results {
+    margin-top: 3px;
+    width: 315px;
+    height: 40px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-style: solid;
+    margin-left: 20px;
+}
 .lab-results .second-results {
     border-style: dashed;
     width: 315px;
@@ -766,13 +779,14 @@ header .container .right-content p {
     background: #F6F7F8 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-left: 20px;
-    margin-top: 2px;
+    margin-top: 5px;
 }
-.container-2 .lab-results .img-1 {
+.lab-results img.img-1 {
     width: 20px;
     height: 20px;
     background: transparent var(--unnamed-color-000000) 0% 0% no-repeat padding-box;
     opacity: 1;
     align-items: right;
-    margin-left: 270px;
-}
+    margin-left: 260px;
+    margin-top: 10px;
+}.
