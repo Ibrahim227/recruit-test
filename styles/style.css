@@ -1,4 +1,8 @@
 html {
+    width: 100%;
+    height: 100%;
+}
+body {
     border-style: dashed;
     top: 0px;
     left: 0px;
@@ -147,16 +151,12 @@ header .container .right-content p {
     margin-left: 18px;
     width: 367px;
     height: 1054px;
-    max-height: auto;
     overflow-y: scroll;
     overflow-x: hidden;
-    border: 1px solid #ddd;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
-    border-style: solid;
-    border: 1px solid black;
 }
 .container-2 .container-patient span.p1 {
     width: auto;
@@ -186,11 +186,20 @@ header .container .right-content p {
     width: 6px;
 }
 .container-2 .container-patient::-webkit-scrollbar-track {
+    width: 6px;
+    height: 941px;
     background: #E3E4E6 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
 }
 
 .container-2 .container-patient::-webkit-scrollbar-thumb {
-    background: darken(var(--scrollbar-color), 10%);
+    background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background: #072635 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    width: 6px;
+    height: 100px;
 }
 .container-2 .container-patient .search-icon {
     width: 18px;
@@ -596,9 +605,19 @@ header .container .right-content p {
 }
 .container-3 .diagnostic-list::-webkit-scrollbar-track {
     background: #E3E4E6 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
 }
 .container-3 .diagnostic-list::-webkit-scrollbar-thumb {
-    background: darken(var(--scrollbar-color), 10%);
+    width: 6px;
+    height: 100px;
+    background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background: #072635 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+}
+.container-3 .diagnostic-list::-webkit-scrollbar-thumb:hover {
+    background: darken(var(--scrollbar-thumb-background), 10%);
 }
 /* Container Profile and Lab Results UI properties */
 
@@ -806,8 +825,15 @@ header .container .right-content p {
 }
 .container-2 .lab-results::-webkit-scrollbar-track {
     background: #E3E4E6 0% 0% no-repeat padding-box;
-    width: 100px;
+    border-radius: 3px;
+    opacity: 1;
 }
 .container-2 .lab-results::-webkit-scrollbar-thumb {
-    background: darken(var(--scrollbar-color), 10%);
+    background: var(--scrollbar-thumb-background) 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    height: 51px;
+}
+.container-2 .lab-results::-webkit-scrollbar-thumb:hover {
+    background: darken(var(--scrollbar-thumb-background), 10%);
 }
