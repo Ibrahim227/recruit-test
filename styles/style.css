@@ -322,6 +322,12 @@ header .container .right-content p {
     margin-top: 40px;
     margin-left: 15px;
 }
+.container-3 .diagnosis .blood-pressure .graphic {
+    display: inline-block;
+    width: 490px;
+    height: 200px;
+    border-style: solid;
+}
 .container-3 .diagnosis .blood-pressure .p1 {
     width: 131px;
     height: 24px;
