@@ -258,6 +258,11 @@ header .container .right-content p {
     margin-top: 20px;
     margin-left: 20px;
 }
+.container-2 .container-patient .active-background .patient-name-active .left-image img {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+}
 
 .container-2 .container-patient .patient-name .right-more-icon {
     width 18px;
@@ -269,8 +274,8 @@ header .container .right-content p {
 }
 .container-2 .container-patient .patient-name .patient-infos {
     display: relative;
-    width: 97px;
-    height: 42px;
+    width: auto;
+    height: auto;
     opacity: 1;
     margin-left: -130px;
     border-style: solid;
@@ -283,11 +288,11 @@ header .container .right-content p {
 }
 .container-2 .container-patient .active-background .patient-name-active .patient-infos {
     display: relative;
-    width: 97px;
-    height: 42px;
+    width: auto;
+    height: auto;
     opacity: 1;
     margin-left: -130px;
-    border-style: solid;
+    border-style: dashed;
 }
 .container-2 .container-patient .active-background .patient-name-active .right-more-icon {
     width 18px;
