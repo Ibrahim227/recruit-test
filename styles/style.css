@@ -1,7 +1,3 @@
-html {
-    width: 100%;
-    height: 100%;
-}
 body {
     border-style: dashed;
     top: 0px;
@@ -223,7 +219,6 @@ header .container .right-content p {
 }
 .container-2 .container-patient .patient-name {
     display: flex;
-    border-style: dashed;
     width: 317px;
     height: 48px;
     opacity: 1;
@@ -249,7 +244,6 @@ header .container .right-content p {
 }
 .container-2 .container-patient .active-background .patient-name-active {
     display: flex;
-    border-style: dashed;
     width: 317px;
     height: 48px;
     opacity: 1;
@@ -267,7 +261,6 @@ header .container .right-content p {
 .container-2 .container-patient .patient-name .right-more-icon {
     width 18px;
     height: 4px;
-    background: transparent url('images/more_horiz_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-right: 15px;
     margin-top: -15px;
@@ -277,8 +270,7 @@ header .container .right-content p {
     width: auto;
     height: auto;
     opacity: 1;
-    margin-left: -130px;
-    border-style: solid;
+    margin-left: -115px;
 }
 .container-2 .container-patient .patient-name .patient-infos .p1{
     margin-top: -5px;
@@ -291,13 +283,12 @@ header .container .right-content p {
     width: auto;
     height: auto;
     opacity: 1;
-    margin-left: -130px;
-    border-style: dashed;
+    margin-left: -140px;
 }
+
 .container-2 .container-patient .active-background .patient-name-active .right-more-icon {
     width 18px;
     height: 4px;
-    background: transparent url('images/more_horiz_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-right: 15px;
     margin-top: -15px;
@@ -411,21 +402,29 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 2px;
 }
-.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic p i {
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic .styled-box {
     width: 14px;
     height: 14px;
     border: 1px solid var(--unnamed-color-ffffff);
     background: #E66FD2 0% 0% no-repeat padding-box;
     border: 1px solid #FFFFFF;
     opacity: 1;
+    border-radius: 30px;
 }
-.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic p i {
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic .zero {
+    display: flex;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic .styled-box {
     width: 14px;
     height: 14px;
     border: 1px solid var(--unnamed-color-ffffff);
     background: #8C6FE6  0% 0% no-repeat padding-box;
     border: 1px solid #FFFFFF;
     opacity: 1;
+    border-radius: 30px;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic .zero {
+    display: flex;
 }
 
 .container-3 .diagnosis .resp-rate {
@@ -648,7 +647,6 @@ header .container .right-content p {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
-    border-style: solid;
 }
 .container-2 .profile .text-content img {
     width: 42px;
@@ -656,9 +654,8 @@ header .container .right-content p {
     opacity: 1;
 }
 .container-2 .profile .text-content {
-    border-style: solid;
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .container-2 .profile .profile-img img {
     margin-top: 25px;
@@ -666,7 +663,6 @@ header .container .right-content p {
     width: 200px;
     height: 200px;
     opacity: 1;
-    border-style: dashed;
 }
 .container-2 .profile .profile-img span.name {
     width: auto;
@@ -682,31 +678,33 @@ header .container .right-content p {
     margin-left: 110px;
 }
 .container-2 .profile .text-content .birth-date {
-    border-style: dashed;
+    display: relative;
     width: auto;
     height: auto;
 }
 .container-2 .profile .text-content .gender {
     width: auto;
     height: auto;
+    display: relative;
     opacity: 1;
-    border-style: dashed;
 }
 .container-2 .profile .text-content .phone {
     width: auto;
     height: auto;
+    display: relative;
     opacity: 1;
-    border-style: dashed;
 }
 .container-2 .profile .text-content .emergency {
     width: auto;
     height: auto;
+    display: relative;
     opacity: 1;
     border-style: dashed;
 }
 .container-2 .profile .text-content .insurance {
     width: auto;
     height: auto;
+    display: relative;
     opacity: 1;
     border-style: dashed;
 }
@@ -741,7 +739,7 @@ header .container .right-content p {
     border-style: dashed;
     width: 220px;
     height: 41px;
-    margin-top: 110px;
+    margin-top: 50px;
     margin-left: 75px;
     background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
     background: #01F0D0 0% 0% no-repeat padding-box;
@@ -834,7 +832,7 @@ header .container .right-content p {
     background: transparent var(--unnamed-color-000000) 0% 0% no-repeat padding-box;
     opacity: 1;
     align-items: right;
-    margin-left: 260px;
+    margin-left: 200px;
     margin-top: 10px;
 }
 
