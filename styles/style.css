@@ -151,6 +151,7 @@ header .container .right-content p {
     margin-left: 18px;
     width: 367px;
     height: 1054px;
+    max-height: inherit;
     overflow-y: scroll;
     overflow-x: hidden;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
