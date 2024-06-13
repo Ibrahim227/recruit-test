@@ -232,6 +232,11 @@ header .container .right-content p {
     margin-top: 29px;
     margin-left: 20px;
 }
+.container-2 .container-patient .patient-name .left-image img {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+}
 .container-2 .container-patient .active-background {
     display: flex;
     width: 353px;
@@ -323,10 +328,11 @@ header .container .right-content p {
     margin-left: 15px;
 }
 .container-3 .diagnosis .blood-pressure .graphic {
-    display: inline-block;
+    display: flex;
     width: 490px;
-    height: 200px;
+    height: 260px;
     border-style: solid;
+    margin-left: 2px;
 }
 .container-3 .diagnosis .blood-pressure .p1 {
     width: 131px;
@@ -361,7 +367,7 @@ header .container .right-content p {
     height: 201px;
     opacity: 1;
     margin-left: 502px;
-    margin-top: -15px;
+    margin-top: -290px;
 }
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic {
     border-style: solid;
