@@ -1,23 +1,29 @@
-// server.js file
-require('dotenv').config();
-let username = process.env.USERNAME;
-let password = process.env.PASSWORD;
-let auth = Buffer.from(`${username}:${password}`).toString('base64');
+const ctx = document.getElementById('myChart');
 
-fetch('https://fedskillstest.coalitiontechnologies.workers.dev/auth', {
-	headers: {
-		'Authorization': `Basic ${auth}`,
-		'Content-Type': 'application/json'
-	}
-}).then(function (response) {
-	if (!response.ok) {
-		return response.json().then(error => {
-			throw new Error(error.message || 'Unknown error');
-		});
-	}
-	return response.json();
-}).then(function (data) {
-	console.log(data);
-}).catch(function (error) {
-	console.error('Authentication failed:', error.message || error);
+new Chart(ctx, {
+   type: 'line',
+    data: {
+      labels: ['Oct 2023', 'Nov 2023', 'Dec 2023', 'Jan 2024', 'Fev 2024', 'Mar 2024'],
+      datasets: [{
+        label: 'Systolic',
+        data: [120, 115, 160, 115, 150, 160],
+        borderWidth: 3,
+        borderColor: '#C26EB4',
+        fill: false
+      }, {
+        label: 'Diastolic',
+        data: [110, 60, 110, 90, 70, 80],
+        borderWidth: 3,
+        borderColor: '#7E6CAB',
+        fill: false
+      }
+      ]
+    },
+  options: {
+      scales: {
+        y: {
+          beginAtZero: false
+        }
+      }
+  }
 });
