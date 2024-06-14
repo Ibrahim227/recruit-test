@@ -266,7 +266,6 @@ header .container .right-content p {
     margin-top: -15px;
 }
 .container-2 .container-patient .patient-name .patient-infos {
-    border-style: solid;
     display: relative;
     width: 95px;
     height: 42px;
@@ -277,13 +276,11 @@ header .container .right-content p {
     height: auto;
     opacity: 1;
     margin-left: -65px;
-    border-style: solid;
 }
 .container-2 .container-patient .patient-name .patient-infos .p2 {
     width: auto;
     height: auto;
     opacity: 1;
-    border-style: solid;
     margin-left: -65px;
 }
 
@@ -679,7 +676,7 @@ header .container .right-content p {
     height: 200px;
     opacity: 1;
 }
-.container-2 .profile .profile-img span.name {
+.container-2 .profile .profile-img #name {
     width: auto;
     height: auto;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
