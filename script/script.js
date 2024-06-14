@@ -63,30 +63,27 @@ async function fetchData() {
 
 function displayData(data) {
     const graphicDiv = document.querySelector('#name');
+//    const profileImage = document.querySelector('#profile-img');
     const systolicLevel = document.querySelector('#systolic-levels');
     const systolicValue = document.querySelector('#systolic-val');
+    const diastolicValue = document.querySelector('#diastolic-val');
+    const diastolicLevel = document.querySelector('#diastolic-levels');
 
     const march2024Diagnosis = data.diagnosis_history.find(diagnosis => diagnosis.month === 'March' && diagnosis.year === 2024);
 
     if (march2024Diagnosis) {
         systolicValue.textContent = `${march2024Diagnosis.blood_pressure.systolic.value}`;
-    }
-
-    if (march2024Diagnosis){
         systolicLevel.textContent = `${march2024Diagnosis.blood_pressure.systolic.levels}`;
-    }
+        diastolicValue.textContent = `${march2024Diagnosis.blood_pressure.diastolic.value}`;
+        diastolicLevel.textContent = `${march2024Diagnosis.blood_pressure.diastolic.levels}`;
 
+    }
     if (data.message) {
         graphicDiv.textContent = data.message;
     } else {
         graphicDiv.textContent = `${data.name}`;
     }
 
-    if (data.message) {
-        systolicLevel.textContent = data.message;
-    } else {
-        systolicLevel.textContent = `${data.blood_pressure.systolic.levels}`;
-    }
 }
 
 // Call fetchData when the script loads
