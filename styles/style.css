@@ -325,7 +325,6 @@ header .container .right-content p {
 
 }
 .container-3 .diagnosis .blood-pressure {
-    border-style: dashed;
     width: 726px;
     height: 298px;
     background: #F4F0FE 0% 0% no-repeat padding-box;
@@ -338,7 +337,6 @@ header .container .right-content p {
     display: flex;
     width: 490px;
     height: 260px;
-    border-style: solid;
     margin-left: 2px;
 }
 .container-3 .diagnosis .blood-pressure .p1 {
@@ -351,6 +349,8 @@ header .container .right-content p {
     font: normal normal bold 18px/24px Manrope;
     letter-spacing: 0px;
     color: #072635;
+    margin-left: 10px;
+    margin-top: 10px;
     text-transform: capitalize;
     opacity: 1;
 }
@@ -368,13 +368,12 @@ header .container .right-content p {
     margin-left: 220px;
 }
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container {
-    border-style: dashed;
     display: relative;
     width: 208px;
     height: 201px;
     opacity: 1;
-    margin-left: 502px;
-    margin-top: -290px;
+    margin-left: 505px;
+    margin-top: -285px;
 }
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic {
     width: auto;
@@ -382,8 +381,30 @@ header .container .right-content p {
     opacity: 1;
     margin-top: -2px;
 }
-.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic div {
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic #systolic-levels {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic #systolic-val {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/30px var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal bold 22px/30px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
     margin-top: 5px;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic div {
+    margin-top: 2px;
     display: flex;
 }
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic div img {
@@ -395,19 +416,56 @@ header .container .right-content p {
     margin-top: 10px;
 }
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic {
-    border-style: solid;
-    display: flex;
     width: auto;
     height: 84px;
     opacity: 1;
     margin-top: -7px;
 }
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic div {
+    margin-top: 2px;
+    display: flex;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic #diastolic-levels {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic #diastolic-val {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/30px var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal bold 22px/30px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-top: 5px;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic div {
+    margin-top: 1px;
+    display: flex;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic div img {
+    width: 10px;
+    height: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container p.line {
     width: 190px;
-    height: 2px;
+    height: 1px;
     background: var(--unnamed-color-ededed) 0% 0% no-repeat padding-box;
-    background: #EDEDED 0% 0% no-repeat padding-box;
-    color: var(--unnamed-color-707070)
+    color: var(--unnamed-color-707070);
     opacity: 1;
 }
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic p,
