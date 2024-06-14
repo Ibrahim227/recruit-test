@@ -95,13 +95,13 @@ function displayData(data) {
         diastolicValue.textContent = `${march2024Diagnosis.blood_pressure.diastolic.value}`;
         diastolicLevel.textContent = `${march2024Diagnosis.blood_pressure.diastolic.levels}`;
 
-        respRateValue.textContent = `${march2024Diagnosis.respiratory_rate.value}`;
+        respRateValue.textContent = `${march2024Diagnosis.respiratory_rate.value} bpm`;
         respRateLevel.textContent = `${march2024Diagnosis.respiratory_rate.levels}`;
 
-        tempValue.textContent = `${march2024Diagnosis.temperature.value}`;
+        tempValue.textContent = `${march2024Diagnosis.temperature.value} °F`;
         tempLevel.textContent = `${march2024Diagnosis.temperature.levels}`;
 
-        heartbeatValue.textContent = `${march2024Diagnosis.heart_rate.value}`;
+        heartbeatValue.textContent = `${march2024Diagnosis.heart_rate.value} bpm`;
         heartbeatLevel.textContent = `${march2024Diagnosis.heart_rate.levels}`;
 
     }
