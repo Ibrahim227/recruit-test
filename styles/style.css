@@ -321,8 +321,6 @@ header .container .right-content p {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
-    border-style: solid;
-
 }
 .container-3 .diagnosis .blood-pressure {
     width: 726px;
@@ -509,7 +507,6 @@ header .container .right-content p {
 }
 
 .container-3 .diagnosis .resp-rate {
-    border-style: dashed;
     width: 228px;
     height: 242px;
     background: #E0F3FA 0% 0% no-repeat padding-box;
@@ -526,13 +523,12 @@ header .container .right-content p {
     margin-top: 10px;
 }
 .container-3 .diagnosis .temp {
-    border-style: dashed;
     width: 228px;
     height: 242px;
     background: #FFE6E9 0% 0% no-repeat padding-box;
     border-radius: 12px;
     opacity: 1;
-    margin-left: 265px;
+    margin-left: 260px;
     margin-top: -247px;
 }
 .container-3 .diagnosis .temp img {
@@ -543,7 +539,6 @@ header .container .right-content p {
     margin-top: 10px;
 }
 .container-3 .diagnosis .heart-rate {
-    border-style: dashed;
     top: 533px;
     left: 935;
     width: 228px;
@@ -551,8 +546,24 @@ header .container .right-content p {
     border-radius: 12px;
     background: #FFE6F1 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-left: 515px;
+    margin-left: 502px;
+    margin-right: 20px;
     margin-top: -246px;
+}
+.container-3 .diagnosis .heart-rate {
+    width: auto;
+}
+.container-3 .diagnosis .heart-rate div#bt {
+    display: flex;
+}
+.container-3 .diagnosis .heart-rate div#bt img {
+     width: 10px;
+    height: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-right: 5px;
+    margin-top: 45px;
 }
 .container-3 .diagnosis .heart-rate img {
     width: 96px;
@@ -561,11 +572,11 @@ header .container .right-content p {
     margin-left: 10px;
     margin-top: 10px;
 }
-.container-3 .diagnosis .heart-rate p,
-.container-3 .diagnosis .temp p,
-.container-3 .diagnosis .resp-rate p {
-    width: 125px;
-    height: 22px;
+.container-3 .diagnosis .heart-rate .subtitle,
+.container-3 .diagnosis .temp .subtitle,
+.container-3 .diagnosis .resp-rate .subtitle {
+    width: auto;
+    height: auto;
     font: var(--unnamed-font-style-normal) normal medium 16px/22px var(--unnamed-font-family-manrope);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-072635);
@@ -574,8 +585,51 @@ header .container .right-content p {
     color: #072635;
     text-transform: capitalize;
     opacity: 1;
-    margin-top: 10px;
     margin-left: 15px;
+}
+.container-3 .diagnosis .heart-rate #heart-val,
+.container-3 .diagnosis .temp #temp-val,
+.container-3 .diagnosis .resp-rate #resp-val {
+    width: auto;
+    height: auto;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) 30px/41px var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal 800 30px/41px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+    margin-left: 10px;
+}
+.container-3 .diagnosis .temp #temp-levels,
+.container-3 .diagnosis .resp-rate #resp-levels {
+    width: auto;
+    height: auto;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.container-3 .diagnosis .heart-rate #heart-levels {
+    width: auto;
+    height: auto;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+    margin-left: 5px;
+    margin-top: 35px;
 }
 
 .container-3 .diagnosis .diagnosis-hist {
@@ -589,7 +643,8 @@ header .container .right-content p {
     letter-spacing: 0px;
     color: #072635;
     opacity: 1;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .container-3 .diagnostic-list {
     margin-top: 30px;
@@ -823,18 +878,15 @@ header .container .right-content p {
     background: #01F0D0 0% 0% no-repeat padding-box;
     border-radius: 41px;
     opacity: 1;
+    border-style: dashed;
 }
-.container-2 .profile .show-infos .infos {
-    margin-top: 15px;
-    width: 220px;
-    height: 19px;
-}
-.container-2 .profile .show-infos .infos .p3 {
+
+.container-2 .profile .show-infos p.p3 {
     margin-left: 40px;
-    text-align: center;
-    width: 240px;
-    height: 19px;
-    display: relative;
+    margin-top: 10px;
+    align-items: center;
+    width: auto;
+    height: auto;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-072635);
