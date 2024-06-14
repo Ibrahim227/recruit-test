@@ -377,15 +377,27 @@ header .container .right-content p {
     margin-top: -290px;
 }
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic {
-    border-style: solid;
-    width: 149px;
+    width: auto;
     height: 84px;
     opacity: 1;
     margin-top: -2px;
 }
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic div {
+    margin-top: 5px;
+    display: flex;
+}
+.container-3 .diagnosis .blood-pressure .systolic-diastolic-container .systolic div img {
+    width: 10px;
+    height: 5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+    margin-right: 5px;
+    margin-top: 10px;
+}
 .container-3 .diagnosis .blood-pressure .systolic-diastolic-container .diastolic {
     border-style: solid;
-    width: 145px;
+    display: flex;
+    width: auto;
     height: 84px;
     opacity: 1;
     margin-top: -7px;
