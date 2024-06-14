@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Developer</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script/script.js"></script>
     <link rel="stylesheet" href="styles/style.css"> <style>
         :root {
 
@@ -207,16 +208,17 @@
                     <span class="p1">Blood Pressure</span>
                     <span class="p2">Last 6 months <img src="images/expand_more_FILL0_wght300_GRAD0_opsz24.png" alt="Expand"></span>
                     <div class="graphic">
+                        <canvas id="myChart"></canvas>
 
                     </div>
                     <div class="systolic-diastolic-container">
                         <div class="systolic">
-                            <p><i>@</i>Systolic</p>
+                            <div class="zero"><div class="styled-box"></div>Systolic</div>
                             <label><img src="images/ArrowUp.png" alt="Up"> arrow</label>
                         </div>
                         <p class="line"></p>
                         <div class="diastolic">
-                            <p><i>@</i>Diastolic</p>
+                            <div class="zero"><div class="styled-box"></div>  Diastolic</div>
                             <label><img src="images/ArrowDown.png" alt="Down">arrow</label>
                         </div>
                     </div>
@@ -282,36 +284,36 @@
                 <div class="text-content">
                     <img src="images/BirthIcon.png" alt="Birth Icon">
                     <div class="birth-date">
-                        <span class="p1">Date of Birth</span><br>
-                        <span class="p2">kk</span>
+                        <span class="p1">Date of Birth<br></span>
+                        <span class="p2">August 23, 1996</span>
                     </div>
                 </div>
                 <div class="text-content">
                     <img src="images/FemaleIcon.png" alt="Gender Icon">
                     <div class="gender">
-                        <span class="p1">Gender</span><br>
-                        <span class="p2">Gender2</span>
+                        <span class="p1">Gender<br></span>
+                        <span class="p2">Female</span>
                     </div>
                 </div>
                 <div class="text-content">
                     <img src="images/PhoneIcon.png" alt="Phone Icon">
                     <div class="phone">
-                        <span class="p1">Contact info.</span><br>
-                        <span class="p2">number</span>
+                        <span class="p1">Contact info.<br></span>
+                        <span class="p2">(415) 555-1234</span>
                     </div>
                 </div>
                 <div class="text-content">
                     <img src="images/PhoneIcon.png" alt="Phone Icon">
                     <div class="emergency">
-                        <span class="p1">Emergency Contacts</span><br>
-                        <span class="p2">number</span>
+                        <span class="p1">Emergency Contacts<br></span>
+                        <span class="p2">(415) 555-5678</span>
                     </div>
                 </div>
                 <div class="text-content">
                     <img src="images/InsuranceIcon.png" alt="Insurance Icon">
                     <div class="insurance">
-                        <span class="p1">Insurance Provider</span><br>
-                        <span class="p2">company</span>
+                        <span class="p1">Insurance Provider<br></span>
+                        <span class="p2">Sunrise Health Assurance</span>
                     </div>
                 </div>
                 <div class="show-infos">
@@ -330,5 +332,6 @@
             </div>
         </div>
     </div>
+    <script src="script/script.js" type="module"></script>
 </body>
 </html>
