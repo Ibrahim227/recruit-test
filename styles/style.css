@@ -266,13 +266,28 @@ header .container .right-content p {
     margin-top: -15px;
 }
 .container-2 .container-patient .patient-name .patient-infos {
+    border-style: solid;
     display: relative;
+    width: 95px;
+    height: 42px;
+    align-items: left;
+}
+.container-2 .container-patient .patient-name .patient-infos .p1 {
     width: auto;
     height: auto;
     opacity: 1;
-    margin-left: -115px;
+    margin-left: -65px;
+    border-style: solid;
 }
-.container-2 .container-patient .patient-name .patient-infos .p1{
+.container-2 .container-patient .patient-name .patient-infos .p2 {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    border-style: solid;
+    margin-left: -65px;
+}
+
+.container-2 .container-patient .patient-name .patient-infos .p1 {
     margin-top: -5px;
 }
 .container-2 .container-patient .active-background .patient-name-active .patient-infos .p1 {
