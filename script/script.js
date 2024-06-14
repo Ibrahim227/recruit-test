@@ -4,7 +4,7 @@ const ctx = document.getElementById('myChart');
 new Chart(ctx, {
    type: 'line',
     data: {
-      labels: ['Oct 2023', 'Nov 2023', 'Dec 2023', 'Jan 2024', 'Fev 2024', 'Mar 2024'],
+      labels: ['Oct, 2023', 'Nov, 2023', 'Dec, 2023', 'Jan, 2024', 'Fev, 2024', 'Mar, 2024'],
       datasets: [{
         label: 'Systolic',
         data: [120, 115, 160, 115, 150, 160],
@@ -62,26 +62,53 @@ async function fetchData() {
 }
 
 function displayData(data) {
-    const graphicDiv = document.querySelector('#name');
+    // retrieve Patient name
+    const nameDiv = document.querySelector('#name');
 //    const profileImage = document.querySelector('#profile-img');
+
+    //retrieve the systolic value and level
     const systolicLevel = document.querySelector('#systolic-levels');
     const systolicValue = document.querySelector('#systolic-val');
+
+    //retrieve the diastolic value and level
     const diastolicValue = document.querySelector('#diastolic-val');
     const diastolicLevel = document.querySelector('#diastolic-levels');
+
+    //retrieve the respiratory  rate and level
+    const respRateValue = document.querySelector('#resp-val');
+    const respRateLevel = document.querySelector('#resp-levels');
+
+    // retrieve the temperature level and value
+    const tempValue = document.querySelector('#temp-val');
+    const tempLevel = document.querySelector('#temp-levels');
+
+    // retrieve the heartbeat rate and value
+    const heartbeatValue = document.querySelector('#heart-val');
+    const heartbeatLevel = document.querySelector('#heart-levels');
 
     const march2024Diagnosis = data.diagnosis_history.find(diagnosis => diagnosis.month === 'March' && diagnosis.year === 2024);
 
     if (march2024Diagnosis) {
         systolicValue.textContent = `${march2024Diagnosis.blood_pressure.systolic.value}`;
         systolicLevel.textContent = `${march2024Diagnosis.blood_pressure.systolic.levels}`;
+
         diastolicValue.textContent = `${march2024Diagnosis.blood_pressure.diastolic.value}`;
         diastolicLevel.textContent = `${march2024Diagnosis.blood_pressure.diastolic.levels}`;
 
+        respRateValue.textContent = `${march2024Diagnosis.respiratory_rate.value}`;
+        respRateLevel.textContent = `${march2024Diagnosis.respiratory_rate.levels}`;
+
+        tempValue.textContent = `${march2024Diagnosis.temperature.value}`;
+        tempLevel.textContent = `${march2024Diagnosis.temperature.levels}`;
+
+        heartbeatValue.textContent = `${march2024Diagnosis.heart_rate.value}`;
+        heartbeatLevel.textContent = `${march2024Diagnosis.heart_rate.levels}`;
+
     }
     if (data.message) {
-        graphicDiv.textContent = data.message;
+        nameDiv.textContent = data.message;
     } else {
-        graphicDiv.textContent = `${data.name}`;
+        nameDiv.textContent = `${data.name}`;
     }
 
 }
@@ -94,9 +121,11 @@ diastolic-val
 systolic-val
 diastolic-levels
 systolic-levels
+
 resp-val
 resp-levels
 temp-val
 temp-levels
+
 heart-levels
 heart-val
