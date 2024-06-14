@@ -15,11 +15,10 @@ body {
     right-content properties
 */
 header {
-    top: 18px;
-    left: 18px;
     width: 1564px;
     height: 72px;
-    margin-top: -10px;
+    margin-top: 10px;
+    margin-left: 10px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 70px;
