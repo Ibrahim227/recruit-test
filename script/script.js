@@ -1,3 +1,4 @@
+// Create Charts
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
@@ -28,9 +29,10 @@ new Chart(ctx, {
   }
 });
 
+// Retrieve Data for Jessica Taylor
 async function fetchData() {
-    const username = 'coalition'; // Credentials directly in the script
-    const password = 'skills-test'; // Credentials directly in the script
+    const username = 'coalition';
+    const password = 'skills-test';
     const auth = btoa(`${username}:${password}`); // Encode credentials in base64
 
     try {
@@ -51,7 +53,7 @@ async function fetchData() {
         if (person) {
             displayData(person);
         } else {
-            displayData({ message: `${person} not found` });
+            displayData({ message: 'Jessica Taylor not found' });
         }
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -61,12 +63,43 @@ async function fetchData() {
 
 function displayData(data) {
     const graphicDiv = document.querySelector('#name');
+    const systolicLevel = document.querySelector('#systolic-levels');
+    const systolicValue = document.querySelector('#systolic-val');
+
+    const march2024Diagnosis = data.diagnosis_history.find(diagnosis => diagnosis.month === 'March' && diagnosis.year === 2024);
+
+    if (march2024Diagnosis) {
+        systolicValue.textContent = `${march2024Diagnosis.blood_pressure.systolic.value}`;
+    }
+
+    if (march2024Diagnosis){
+        systolicLevel.textContent = `${march2024Diagnosis.blood_pressure.systolic.levels}`;
+    }
+
     if (data.message) {
         graphicDiv.textContent = data.message;
     } else {
         graphicDiv.textContent = `${data.name}`;
     }
+
+    if (data.message) {
+        systolicLevel.textContent = data.message;
+    } else {
+        systolicLevel.textContent = `${data.blood_pressure.systolic.levels}`;
+    }
 }
 
 // Call fetchData when the script loads
 fetchData();
+
+
+diastolic-val
+systolic-val
+diastolic-levels
+systolic-levels
+resp-val
+resp-levels
+temp-val
+temp-levels
+heart-levels
+heart-val
