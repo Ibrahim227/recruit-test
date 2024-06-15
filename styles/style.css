@@ -878,13 +878,11 @@ header .container .right-content p {
     background: #01F0D0 0% 0% no-repeat padding-box;
     border-radius: 41px;
     opacity: 1;
-    border-style: dashed;
 }
 
 .container-2 .profile .show-infos p.p3 {
     margin-left: 40px;
-    margin-top: 10px;
-    align-items: center;
+    margin-top: 90px;
     width: auto;
     height: auto;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
@@ -894,7 +892,7 @@ header .container .right-content p {
     letter-spacing: 0px;
     color: #072635;
     opacity: 1;
-
+    margin-right: 35px;
 }
 
 /* Lab Results UI Properties*/
