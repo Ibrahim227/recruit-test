@@ -64,7 +64,6 @@ async function fetchData() {
 function displayData(data) {
     // retrieve Patient name
     const nameDiv = document.querySelector('#name');
-//    const profileImage = document.querySelector('#profile-img');
 
     //retrieve the systolic value and level
     const systolicLevel = document.querySelector('#systolic-levels');
@@ -102,8 +101,9 @@ function displayData(data) {
         tempLevel.textContent = `${march2024Diagnosis.temperature.levels}`;
 
         heartbeatValue.textContent = `${march2024Diagnosis.heart_rate.value} bpm`;
-        heartbeatLevel.textContent = `${march2024Diagnosis.heart_rate.levels}`;
-
+        heartbeatLevel.textContent = `${march2024Diagnosis.heart_rate.levels}`;git
+    } else {
+        displayData({ message: "Data not found!"});
     }
     if (data.message) {
         nameDiv.textContent = data.message;
