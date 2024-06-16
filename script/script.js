@@ -101,43 +101,20 @@ function displayData(data) {
         tempLevel.textContent = `${march2024Diagnosis.temperature.levels}`;
 
         heartbeatValue.textContent = `${march2024Diagnosis.heart_rate.value} bpm`;
-        heartbeatLevel.textContent = `${march2024Diagnosis.heart_rate.levels}`;git
+        heartbeatLevel.textContent = `${march2024Diagnosis.heart_rate.levels}`;
     } else {
         displayData({ message: "Data not found!"});
     }
 
-    const ProblemOne = document.querySelector('.prob1');
-    const DiagnosticList = data.diagnostic_list.find(diagnostic_list);
-
-    if (DiagnosticList) {
-        ProblemOne.textContent = `${diagnostic_list.name}`;
-    }
     if (data.message) {
         nameDiv.textContent = data.message;
     } else {
         nameDiv.textContent = `${data.name}`;
     }
 
-    const DisplayDiagnosticList(data);
 }
 
-function DisplayDiagnostic(patient) {
-    const diagnosticItems = patient.diagnostic_list;
 
-    if (diagnosticItems && diagnosticItems.length > 0) {
-        diagnosticItems.forEach((diagnostic, index) => {
-            if (index < 4) {
-                const lineClass = `$.prob{index + 1}`;
-                const lineElement = document.querySelector(lineClass);
-                if (lineElement) {
-                    lineElement.textContent = diagnostic.name;
-                    lineElement.nexElementSibling.textContent = diagnostic.description;
-                    lineElement.nextElementSibling.nextElementSibling.textContent = diagnostic.status;
 
-                }
-            }
-        })
-    }
-}
 // Call fetchData when the script loads
 fetchData();
