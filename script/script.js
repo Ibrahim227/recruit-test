@@ -105,6 +105,13 @@ function displayData(data) {
     } else {
         displayData({ message: "Data not found!"});
     }
+
+    const ProblemOne = document.querySelector('.prob1');
+    const DiagnosticList = data.diagnostic_list.find(diagnostic_list);
+
+    if (DiagnosticList) {
+        ProblemOne.textContent = `${diagnostic_list.name}`;
+    }
     if (data.message) {
         nameDiv.textContent = data.message;
     } else {
