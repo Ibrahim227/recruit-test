@@ -721,7 +721,7 @@ header .container .right-content p {
     opacity: 1;
     margin-top: 12px;
 }
-.container-3 .diagnostic-list .text-content .first-line div.t3{
+.container-3 .diagnostic-list .text-content .first-line div.status1 {
     width: 79px;
     height: 38px;
 }
