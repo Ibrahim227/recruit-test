@@ -118,7 +118,26 @@ function displayData(data) {
         nameDiv.textContent = `${data.name}`;
     }
 
+    const DisplayDiagnosticList(data);
 }
 
+function DisplayDiagnostic(patient) {
+    const diagnosticItems = patient.diagnostic_list;
+
+    if (diagnosticItems && diagnosticItems.length > 0) {
+        diagnosticItems.forEach((diagnostic, index) => {
+            if (index < 4) {
+                const lineClass = `$.prob{index + 1}`;
+                const lineElement = document.querySelector(lineClass);
+                if (lineElement) {
+                    lineElement.textContent = diagnostic.name;
+                    lineElement.nexElementSibling.textContent = diagnostic.description;
+                    lineElement.nextElementSibling.nextElementSibling.textContent = diagnostic.status;
+
+                }
+            }
+        })
+    }
+}
 // Call fetchData when the script loads
 fetchData();
