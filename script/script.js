@@ -122,17 +122,3 @@ function displayData(data) {
 
 // Call fetchData when the script loads
 fetchData();
-
-
-diastolic-val
-systolic-val
-diastolic-levels
-systolic-levels
-
-resp-val
-resp-levels
-temp-val
-temp-levels
-
-heart-levels
-heart-val
