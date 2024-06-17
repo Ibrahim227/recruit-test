@@ -310,8 +310,9 @@ header .container .right-content p {
 */
 
 .container-3 .diagnosis {
+
     margin-top: 35px;
-    margin-left: 25px;
+    margin-left: 30px;
     top: 122px;
     left: 417px;
     width: 766px;
@@ -772,7 +773,7 @@ header .container .right-content p {
 
 .container-2 .profile {
     margin-top: 35px;
-    margin-left: 35px;
+    margin-left: 25px;
     width: 367px;
     height: 740px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
