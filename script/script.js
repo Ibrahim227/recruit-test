@@ -107,6 +107,7 @@ function displayData(data) {
         console.error("March 2024 diagnosis not found");
     }
 
+    // Retrieve Jessica Taylor's Name
     if (data.message) {
         nameDiv.textContent = data.message;
     } else {
@@ -117,7 +118,7 @@ function displayData(data) {
     displayLabResults(data.lab_results);
 }
 
-// retrieve diagnostic-list information
+// Retrieve diagnostic-list data
 function DisplayDiagnosticList(patient) {
     const diagnosticItems = patient.diagnostic_list.slice(0, 4);
 
@@ -145,6 +146,7 @@ function DisplayDiagnosticList(patient) {
     }
 }
 
+// Retrieve LabResults data
 function displayLabResults(labResults) {
     const labItems = labResults.slice(0, 4);
 
