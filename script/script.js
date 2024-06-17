@@ -119,7 +119,7 @@ function displayData(data) {
 
 // retrieve diagnostic-list information
 function DisplayDiagnosticList(patient) {
-    const diagnosticItems = patient.diagnostic_list.slice(0, 4); // Slicing to get only the first 4 items
+    const diagnosticItems = patient.diagnostic_list.slice(0, 4);
 
     if (diagnosticItems && diagnosticItems.length > 0) {
         // Display the diagnostic information in the specified divs
@@ -146,10 +146,10 @@ function DisplayDiagnosticList(patient) {
 }
 
 function displayLabResults(labResults) {
-    const labItems = labResults.slice(0, 5); // Slicing to get only the first 5 items
+    const labItems = labResults.slice(0, 4);
 
     if (labItems && labItems.length > 0) {
-        // Display the lab results in the specified divs
+        // Display the lab results
         labItems.forEach((lab, index) => {
             const resultsId = `#${["one", "two", "three", "four", "five"][index]}`;
 
