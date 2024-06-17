@@ -102,8 +102,9 @@ function displayData(data) {
 
         heartbeatValue.textContent = `${march2024Diagnosis.heart_rate.value} bpm`;
         heartbeatLevel.textContent = `${march2024Diagnosis.heart_rate.levels}`;
+
     } else {
-        displayData({ message: "Data not found!"});
+        console.error("March 2024 diagnosis not found");
     }
 
     if (data.message) {
@@ -112,9 +113,61 @@ function displayData(data) {
         nameDiv.textContent = `${data.name}`;
     }
 
+    DisplayDiagnosticList(data);
+    DisplayLabResults(data);
 }
 
+// retrieve diagnostic-list information
+function DisplayDiagnosticList(patient) {
+    const diagnosticItems = patient.diagnostic_list.slice(0, 4); // Slicing to get only the first 4 items
 
+    if (diagnosticItems && diagnosticItems.length > 0) {
+        // Display the diagnostic information in the specified divs
+        diagnosticItems.forEach((diagnostic, index) => {
+            const probClass = `.prob${index + 1}`;
+            const descriptClass = `.descript${index + 1}`;
+            const statusClass = `.status${index + 1}`;
 
-// Call fetchData when the script loads
+            const probElement = document.querySelector(probClass);
+            const descriptElement = document.querySelector(descriptClass);
+            const statusElement = document.querySelector(statusClass);
+
+            if (probElement) {
+                probElement.textContent = diagnostic.name;
+            }
+            if (descriptElement) {
+                descriptElement.textContent = diagnostic.description;
+            }
+            if (statusElement) {
+                statusElement.textContent = diagnostic.status;
+            }
+        });
+    }
+}
+
+function DisplayLabResults(patient) {
+    const labItems = patient.lab_results.slice(0, 5);
+
+    if (labItems && labItems.length > 0) {
+        labItems.forEach(lab, index => {
+            const labOne = `$#one{index + 1}`;
+            const labTwo = `$#two{index + 1}`;
+            const labThree = `$#three{index + 1}`;
+            const labFour = `$#four{index + 1}`;
+            const labFive = `$#five{index + 1}`;
+
+            const labFirst = document.querySelector(labOne);
+            const labSecond = document.querySelector(labTwo);
+            const labThird = document.querySelector(labThree);
+            const labFourth = document.querySelect(labFour);
+            const labFifth = document.querySelector(labFive);
+
+            if (labFirst) {
+                labFirst.textContent = lab.one;
+            }
+        })
+    }
+}
+
+// Call fetchData function when the script loads
 fetchData();
