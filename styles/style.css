@@ -1,5 +1,4 @@
 body {
-    border-style: dashed;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -143,7 +142,7 @@ header .container .right-content p {
 }
 .container-2 .container-patient {
     margin-top: 36px;
-    margin-left: 18px;
+    margin-left: 9px;
     width: 367px;
     height: 1054px;
     max-height: inherit;
@@ -773,7 +772,7 @@ header .container .right-content p {
 
 .container-2 .profile {
     margin-top: 35px;
-    margin-left: 20px;
+    margin-left: 35px;
     width: 367px;
     height: 740px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -901,12 +900,10 @@ header .container .right-content p {
     height: 296px;
     overflow-y: auto;
     overflow-x: hidden;
-    /*UI Properties*/
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
-    border-style: solid;
 }
 .lab-results .lab {
     width: 137px;
@@ -922,9 +919,7 @@ header .container .right-content p {
     margin-bottom: 14px;
 }
 .lab-results .third-results,
-.lab-results .fourth-results,
-.lab-results  .fifth-results {
-    border-style: solid;
+.lab-results .fourth-results {
     width: 315px;
     height: 40px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -940,11 +935,9 @@ header .container .right-content p {
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
-    border-style: solid;
     margin-left: 20px;
 }
 .lab-results .second-results {
-    border-style: dashed;
     width: 315px;
     height: 40px;
     background: #F6F7F8 0% 0% no-repeat padding-box;
@@ -952,20 +945,20 @@ header .container .right-content p {
     margin-left: 20px;
     margin-top: 5px;
 }
+
 .lab-results img.img-1 {
     width: 20px;
     height: 20px;
     background: transparent var(--unnamed-color-000000) 0% 0% no-repeat padding-box;
     opacity: 1;
     align-items: right;
-    margin-left: 200px;
-    margin-top: 10px;
+    margin-left: 285px;
+    margin-top: -15px;
 }
 
 .lab-results .first-results #one {
     width: auto;
     height: auto;
-    border-style: solid;
 }
 
 .container-2 .lab-results::-webkit-scrollbar {
