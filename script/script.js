@@ -114,7 +114,7 @@ function displayData(data) {
     }
 
     DisplayDiagnosticList(data);
-    DisplayLabResults(data);
+    displayLabResults(data.lab_results);
 }
 
 // retrieve diagnostic-list information
@@ -124,13 +124,13 @@ function DisplayDiagnosticList(patient) {
     if (diagnosticItems && diagnosticItems.length > 0) {
         // Display the diagnostic information in the specified divs
         diagnosticItems.forEach((diagnostic, index) => {
-            const probClass = `.prob${index + 1}`;
-            const descriptClass = `.descript${index + 1}`;
-            const statusClass = `.status${index + 1}`;
+            const probName = `.prob${index + 1}`;
+            const descriptName = `.descript${index + 1}`;
+            const statusName = `.status${index + 1}`;
 
-            const probElement = document.querySelector(probClass);
-            const descriptElement = document.querySelector(descriptClass);
-            const statusElement = document.querySelector(statusClass);
+            const probElement = document.querySelector(probName);
+            const descriptElement = document.querySelector(descriptName);
+            const statusElement = document.querySelector(statusName);
 
             if (probElement) {
                 probElement.textContent = diagnostic.name;
@@ -145,27 +145,20 @@ function DisplayDiagnosticList(patient) {
     }
 }
 
-function DisplayLabResults(patient) {
-    const labItems = patient.lab_results.slice(0, 5);
+function displayLabResults(labResults) {
+    const labItems = labResults.slice(0, 5); // Slicing to get only the first 5 items
 
     if (labItems && labItems.length > 0) {
-        labItems.forEach(lab, index => {
-            const labOne = `$#one{index + 1}`;
-            const labTwo = `$#two{index + 1}`;
-            const labThree = `$#three{index + 1}`;
-            const labFour = `$#four{index + 1}`;
-            const labFive = `$#five{index + 1}`;
+        // Display the lab results in the specified divs
+        labItems.forEach((lab, index) => {
+            const resultsId = `#${["one", "two", "three", "four", "five"][index]}`;
 
-            const labFirst = document.querySelector(labOne);
-            const labSecond = document.querySelector(labTwo);
-            const labThird = document.querySelector(labThree);
-            const labFourth = document.querySelect(labFour);
-            const labFifth = document.querySelector(labFive);
+            const labResultsElement = document.querySelector(resultsId);
 
-            if (labFirst) {
-                labFirst.textContent = lab.one;
+            if (labResultsElement) {
+                labResultsElement.textContent = lab;
             }
-        })
+        });
     }
 }
 
