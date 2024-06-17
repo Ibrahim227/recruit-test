@@ -114,7 +114,7 @@ function displayData(data) {
     }
 
     DisplayDiagnosticList(data);
-    displayLabResults(data.lab_results);
+    displayLabResults(data);
 }
 
 // retrieve diagnostic-list information
