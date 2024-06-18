@@ -25,3 +25,6 @@ async function getToken() {
         throw error;
     }
 }
+
+// export function for use
+export { getToken };
