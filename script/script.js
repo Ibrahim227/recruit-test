@@ -31,14 +31,16 @@ new Chart(ctx, {
 
 // Retrieve Data for Jessica Taylor
 async function fetchData() {
-    const username = 'coalition';
-    const password = 'skills-test';
-    const auth = btoa(`${username}:${password}`); // Encode credentials in base64
+//    const username = 'coalition';
+//    const password = 'skills-test';
+//    const auth = btoa(`${username}:${password}`); // Encode credentials in base64
 
     try {
-        const response = await fetch('https://fedskillstest.coalitiontechnologies.workers.dev/', {
+//        const response = await fetch('https://fedskillstest.coalitiontechnologies.workers.dev/', {
+          const token = await getToken();
+          const response =  await fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
              headers: {
-                  'Authorization': `Basic ${auth}`,
+                  'Authorization': `Bearer ${token}`,
                   'Content-Type': 'application/json'
              }
         });
