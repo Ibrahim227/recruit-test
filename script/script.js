@@ -1,42 +1,8 @@
-// Create Charts
-const ctx = document.getElementById('myChart');
-
-new Chart(ctx, {
-   type: 'line',
-    data: {
-      labels: ['Oct, 2023', 'Nov, 2023', 'Dec, 2023', 'Jan, 2024', 'Fev, 2024', 'Mar, 2024'],
-      datasets: [{
-        label: 'Systolic',
-        data: [120, 115, 160, 115, 150, 160],
-        borderWidth: 3,
-        borderColor: '#C26EB4',
-        fill: false
-      }, {
-        label: 'Diastolic',
-        data: [110, 60, 110, 90, 70, 80],
-        borderWidth: 3,
-        borderColor: '#7E6CAB',
-        fill: false
-      }
-      ]
-    },
-  options: {
-      scales: {
-        y: {
-          beginAtZero: false
-        }
-      }
-  }
-});
+import { getToken } from './server.js';
 
 // Retrieve Data for Jessica Taylor
 async function fetchData() {
-//    const username = 'coalition';
-//    const password = 'skills-test';
-//    const auth = btoa(`${username}:${password}`); // Encode credentials in base64
-
     try {
-//        const response = await fetch('https://fedskillstest.coalitiontechnologies.workers.dev/', {
           const token = await getToken();
           const response =  await fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
              headers: {
