@@ -3,7 +3,7 @@ async function getToken() {
     const password = 'skills-test';
 
     try {
-        const response = await fetch("https://fedskillstest.coalitiontechnologies.workers.dev/token", {
+        const response = await fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
