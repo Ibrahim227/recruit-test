@@ -25,6 +25,7 @@ async function fetchData() {
 
         if (person) {
             displayData(person);
+            console.log("SUCCESS!")
         } else {
             displayData({ message: 'Jessica Taylor not found' });
         }
