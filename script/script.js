@@ -1,15 +1,20 @@
-import { getToken } from './server.js';
-
 // Retrieve Data for Jessica Taylor
 async function fetchData() {
+    const username = 'coalition';
+    const password = 'skills-test';
+    const auth = btoa(`${username}:${password}`); // Encode credentials in base64
+
+    var myHeaders = new Headers();
+    myHeaders.append("Authorization", `Basic ${auth}`);
+
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+
     try {
-          const token = await getToken();
-          const response =  await fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
-             headers: {
-                  'Authorization': `Bearer ${token}`,
-                  'Content-Type': 'application/json'
-             }
-        });
+        const response = await fetch("https://fedskillstest.coalitiontechnologies.workers.dev", requestOptions);
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
