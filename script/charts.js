@@ -1,4 +1,4 @@
-// Create Charts
+// Create Charts for Blood pressure
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
