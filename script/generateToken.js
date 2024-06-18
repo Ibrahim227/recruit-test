@@ -1,5 +1,5 @@
 ---Trying to generate a Token. Apparently the endpoint API does not support "POST" requests. So, I done it with the "Basic-encoded-base64"---
-
+I had a "405 method not allowed" status.
 //async function getToken() {
 //    const username = 'coalition';
 //    const password = 'skills-test';
