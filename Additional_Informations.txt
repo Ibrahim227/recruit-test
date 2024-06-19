@@ -3,4 +3,5 @@ Authors: Maman Sani Ibrahim
 My LinkedIn Profile: https://www.linkedin.com/in/maman-sani-ibrahim
 My GitHub Profile: https://github.com/Ibrahim227/
 
+Project Hosted using GitHub pages: https://ibrahim227.github.io/recruit-test/
 Project Repository: https://github.com/Ibrahim227/recruit-test
